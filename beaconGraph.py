@@ -283,7 +283,7 @@ def url_ok(url):
         return False
 
 ###FLASK SETUP###
-@log_manager.user_loader
+@login_manager.user_loader
 def load_user(userId):
     return User(userId)
 
