@@ -23,7 +23,7 @@ from py2neo import Graph, Node, Relationship
 
 app = Flask(__name__)
 app.secret_key = os.urandom(32)
-log_manager = LoginManager(app)
+login_manager = LoginManager(app)
 
 FLUSH_DB = True
 MANUF_UPDATE = False
